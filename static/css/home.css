@@ -1,0 +1,390 @@
+﻿@-moz-viewport {
+    width: device-height;
+    user-zoom: fixed;
+}
+
+@-ms-viewport {
+    width: device-height;
+    user-zoom: fixed;
+}
+
+@-webkit-viewport {
+    width: device-height;
+    user-zoom: fixed;
+}
+
+@viewport {
+    width: device-height;
+    user-zoom: fixed;
+}
+
+@media screen and (orientation:landscape) {
+
+    .mstpHeaderOrientation {
+        height: 8vh;
+    }
+
+    .mstpHeaderMainTextOrientation {
+        font-size: 5vh;
+    }
+
+    .mstpHeaderIconOrientation {
+        font-size: 5vh;
+    }
+
+    .mstpHeaderSubTextOrientation {
+        font-size: 3vh;
+    }
+
+    .mstpFooterOrientation {
+        height: 5vh;
+        font-size: 2vh;
+    }
+}
+
+@media screen and (orientation:portrait) {
+
+    .mstpHeaderOrientation {
+        height: 8vw;
+    }
+
+    .mstpHeaderMainTextOrientation {
+        font-size: 5vw;
+    }
+
+    .mstpHeaderIconOrientation {
+        font-size: 5vw;
+    }
+
+    .mstpHeaderSubTextOrientation {
+        font-size: 3vw;
+    }
+
+    .mstpFooterOrientation {
+        height: 5vh;
+        font-size: 2vw;
+    }
+}
+
+.intg-bckg-Gray {
+    background-color: #373737;
+}
+
+.intg-baseFont {
+    font-family: TitilliumWeb-Light;
+    font-size: 4vh;
+    color: white;
+}
+
+body {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    touch-action: none;
+    background-color: darkgrey;
+    cursor: default;
+    font-family: TitilliumWeb-Light;
+    color: #e8e8e8;
+}
+
+.mstpHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+.mstpTabPlaceholder {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    width: 600%;
+}
+
+.tabSize {
+    position:relative;
+    width: 16.666667%;
+    height: 100%;
+}
+
+
+.mstpFooter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: openSansLight;
+    cursor: default;
+}
+
+.mstpHeaderMain {
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mstpHeaderMainText {
+    margin-left: 0.5em;
+    font-family: openSansRegular;
+    cursor: default;
+}
+
+.mstpHeaderIcon {
+    margin-left: 0.5em;
+    font-family: intgIconFonts;
+    cursor: default;
+}
+
+.mstpHeaderSubText {
+    margin-right: 2%;
+    font-family: openSansLight;
+}
+
+    .mstpHeaderSubText:hover {
+        cursor: default;
+    }
+
+.mstpFullScreen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    right: 2vh;
+    bottom: 2vh;
+}
+
+.mstpViewport {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+}
+
+.mstpInfoPlaceholder {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    padding: 1vh 1vh 1vh 1vh;
+    margin-top: 1vh;
+    border: solid thin gray;
+    border-radius: 4px;
+}
+
+.mstpInfoTeststand {
+    display: flex;
+    flex: 1.6;
+}
+
+.mstpInfoOrder {
+    display: flex;
+    flex: 1;
+    margin-right: 2vh;
+}
+
+.mstpInfoUser {
+    display: flex;
+    flex: .5;
+    margin-right: 1vh;
+}
+
+.mstpInfoFont {
+    font-family: TitilliumWeb-Light;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.mstpHorizontalScroller {
+    /*-moz-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    transition: all linear .5s;*/
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 600%;
+    height: 100%;
+    float: left;
+    left: 0;
+    overflow: hidden;
+    /*background-color: green;*/
+}
+
+
+.mstpHorizontalScrollerDevider {
+    position: relative;
+    width: 33.333333332333333%;
+    height: 100%;
+}
+
+
+.mstpViewer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.mstpViewerPlaceholder {
+    flex-grow: 2;
+    width: 100%;
+    height: 10%;
+}
+
+.mstpCenterContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mstpBlocker {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    opacity: .2;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.colorGray {
+    color: gray;
+}
+
+.colorIntergasGray {
+    background-color: #373737;
+}
+
+.backgroundColorGray {
+    background-color: white;
+}
+
+.tabPlaceholder {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    align-items: center;
+    /*left: 0;
+    right: 0;*/
+}
+
+.tabButton {
+    font-family: TitilliumWeb-Light;
+    width: 8vw;
+    height: 1rem;
+    color: white;
+    font-size: .6rem;
+    cursor: pointer;
+    margin-left: 1vh;
+    border: solid;
+    border-width: 1px;
+    border-color: #373737;
+}
+
+    .tabButton:hover {
+        background-color: #4f4f4f;
+    }
+
+    .tabButton:first-child {
+        margin-left: 0;
+    }
+
+    .tabButton:active {
+        border-color: white;
+    }
+
+    .tabButton:disabled {
+        background-color: #4f4f4f;
+        cursor:not-allowed;
+    }
+
+.mission_tree {
+    font-family: TitilliumWeb-Light;
+    width: fit-content;
+    height: fit-content;
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: row;
+
+    border: solid;
+    border-width: 1px;
+    border-color: #373737;
+}
+
+.mission_node {
+    font-family: TitilliumWeb-Light;
+    width: auto;
+    height: auto;
+    margin: 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    border: solid;
+    border-width: 1px;
+    border-color: #373737;
+}
+
+.mission_node {
+    font-family: TitilliumWeb-Light;
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+    color: white;
+    font-size: .6rem;
+    cursor: pointer;
+    margin-left: 1vh;
+    border: solid;
+    border-width: 1px;
+    border-color: #373737;
+}
+
+select {
+    background-color: aqua;
+    height: 3.5vh;
+    width: 12vw;
+    height: 3.5vh;
+    color: white;
+    font-family: 'TitilliumWeb-Light';
+    font-size: calc(0.6vw + 0.6vh);
+    border-color: #373737;
+    cursor: pointer;
+ 
+}
+
+    select:hover {
+        background-color: #4f4f4f;
+    }
+
+    select:first-child {
+        margin-left: 0;
+    }
+
+    select:active {
+        border-color: white;
+    }
+
+    select:disabled {
+        background-color: #4f4f4f;
+    }
+

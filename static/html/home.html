@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="../static/css/home.css" rel="stylesheet" />
+    <title></title>
+</head>
+
+<body class="rootFontSize">
+
+    <div class="mstpFullScreen">
+
+        <div class="mstpHeader">
+
+            <div style="display:flex;flex-direction:row;justify-content:space-between;">
+
+                <div class="tabPlaceholder">
+
+                    <button id="eu4tab" class="tabButton mstpCenterContent intg-bckg-Gray" onclick="btnTab_CLICK(this)">EU4</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mstpViewport">
+
+            <div id="mstpTabPlaceholder" class="mstpTabPlaceholder">
+
+                <div id="pnlAppContol" class="tabSize" style="display:flex;">
+
+                    <div class="AppControl">
+
+                        <div style="height:5vh;display:flex;flex-direction:row;align-items:center;padding-top:1vh;">
+                            <button id="new" onclick="newClicked()" class="tabButton mstpCenterContent intg-bckg-Gray">NEW</button>
+                            <button id="import"  onclick="importClicked()" class="tabButton mstpCenterContent intg-bckg-Gray">IMPORT</button>
+                            <button id="export"  onclick="exportClicked()" class="tabButton mstpCenterContent intg-bckg-Gray">EXPORT</button>
+                        </div>
+
+                        <div style="display:flex;flex-direction:row;flex:1;margin-top:1vh;">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content" id=content>
+
+        </div>
+
+        </div>
+
+        
+
+    </div>    
+
+    <script src="../static/js/init.js"></script>
+
+</body>
+</html>

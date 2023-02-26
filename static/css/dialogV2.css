@@ -1,0 +1,116 @@
+﻿@media (orientation:landscape) {
+
+    .intgDlgContainerOrientation {
+        max-height: 70vh;
+        max-width: 70vw;
+        min-height: 25vh;
+        min-width: 30vw;
+    }
+
+    .intgDlgHeaderOrientation {
+        height: 5vh;
+    }
+
+    .intgDlgFooterOrientation {
+        height: 5vh;
+    }
+}
+
+@media (orientation:portrait) {
+
+    .intgDlgContainerOrientation {
+        max-height: 70vw;
+        max-width: 70vh;
+        min-height: 25vw;
+        min-width: 30vh;
+    }
+
+    .intgDlgHeaderOrientation {
+        height: 5vw;
+    }
+
+    .intgDlgFooterOrientation {
+        height: 5vw;
+    }
+}
+
+.intgDialog {
+    padding: 0;
+    border:solid thin #1b1b1b;
+    border-radius:5px 5px 0 0;
+    overflow:hidden;
+    transition:all ease-in .15s;
+    opacity:1;
+}
+
+.intgDlgContainer {
+    display: flex;
+    flex-direction: column;
+    border: solid .3vh white;
+    border-radius:5px 5px 0 0;
+    overflow:hidden;
+}
+
+.intgDlgHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+    width: 100%;
+    background-color:  #373737;
+    font-family:openSansLight;
+    font-size:calc(.9vw + .9vh);
+    color:white;
+    padding-left:calc(.4vw + .4vw);
+
+}
+
+.intgDlgBody {
+    display: flex;
+    flex: 1;
+    align-items:center;
+
+    height: 100%;
+
+    padding: 2vh;
+}
+
+.intgDlgFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    width: 100%;
+    background-color:#e6e6e6;
+
+}
+
+.intgDlgButton {
+
+    border:solid thin #373737;
+    width: 6vw;
+    height:3vh;
+    margin: 0 .6vh 0 0;
+    background-color:#373737;
+    color:white;
+    font-family:openSansLight;
+    font-size: calc(.5vw + .5vh);
+    text-transform:uppercase;
+    
+
+}
+
+    .intgDlgButton:active {
+
+        border-color:white;
+    }
+
+
+.intgDlgMessage {
+
+    font-family:openSansLight;
+    font-size: calc(.7vw + .7vh);
+    color:#373737;
+    max-width:40vw;
+
+}

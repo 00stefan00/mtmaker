@@ -1,0 +1,57 @@
+.hmdPlotPlaceholder {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+}
+
+.hmdPlotSlider {
+    opacity: .1;
+    width: 100%;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    border: solid;
+    border-width: 0;
+    height: 25px;
+    padding: 2px;
+}
+
+    .hmdPlotSlider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 23px;
+        border: solid;
+        border-color: black;
+        border-radius: 2px;
+        border-width: 1px;
+        background-image: -webkit-linear-gradient(top,#777,#555,#777);
+    }
+
+.hmdSliderDiv {
+    position: absolute;
+    bottom: -13px;
+    right: 15px;
+    left: 15px;
+}
+
+.hmdMasterDiv {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    margin: 40px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+}
+.hmdPlotLabel {
+    font-family:'TitilliumWeb-Light';
+    font-size:calc(.5vw + .5vh);
+}
+
+    .hmdPlotLabel:hover {
+        cursor:pointer;
+    }
