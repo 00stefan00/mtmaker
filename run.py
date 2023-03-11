@@ -39,7 +39,7 @@ def start(argv):
             logging.info("! Cherrypy logging disabled !")
 
     _localDir = os.path.abspath(os.path.dirname(__file__))
-    conf = {'/': {'tools.staticdir.on': True, 'tools.staticdir.dir': _localDir}}
+    conf = {'/': {'tools.staticdir.on': True, 'tools.staticdir.dir': os.path.join(_localDir)}}
 
     cherrypy.server.socket_port = int(port)
     cherrypy.server.socket_host = ip
@@ -47,6 +47,7 @@ def start(argv):
     cherrypy.config["tools.encode.on"] = True
     cherrypy.config["tools.encode.encoding"] = "utf-8"
     cherrypy.config.update({'server.socket_host': '0.0.0.0'})
+    # cherrypy.config.update({'/images': {'tools.staticdir.on': True, 'tools.staticdir.dir': os.path.join(_localDir, 'static', 'assets', 'missions')}})
     logging.getLogger("cherrypy").propagate = loggingEnabled
     cherrypy.config["log.screen"] = loggingEnabled
 

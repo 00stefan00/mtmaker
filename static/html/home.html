@@ -3,12 +3,19 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link href="../static/css/home.css" rel="stylesheet" />
+    <link href="../static/css/modal.css" rel="stylesheet" />
+
     <title></title>
 </head>
 
 <body class="rootFontSize">
 
     <div class="mstpFullScreen">
+        <!-- Modal dialog -->
+            <div id="modal" style="display:none">
+              <input type="file" id="file-input">
+              <button onclick="parseJSON()">Select MissionTree</button>
+            </div>
 
         <div class="mstpHeader">
 
@@ -60,6 +67,7 @@
     </div>    
 
     <script src="../static/js/init.js"></script>
+    <script src="../static/js/mtloader.js"></script>
 
 </body>
 </html>

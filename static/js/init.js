@@ -7,6 +7,7 @@ function newClicked() {
 
 function importClicked() {
     console.log(`importClicked`);
+    openModal();
 }
 
 function exportClicked() {
@@ -19,17 +20,19 @@ function buildEmptyMt(){
     var maxColumn = 5
 
     tree = createElement("div", "mission_tree")
+    detailsform = createElement("div", "mission_form")
 
     contentElement.append(tree)
+    contentElement.append(detailsform)
 
     for (var i = 0; i < maxColumn; i++) {
         mission_branch = createElement("div", "mission_branch", i)
         tree.append(mission_branch)
 
-        mission_node = createElement("div", "mission_node", `${i}-${1}`)
-
+        mission_node = createElement("div", "mission_node", `${i}-${1}`)        
+        mission_node.appendChild(getMissionIcon("mission_unknown_mission.png"))
+        mission_node.onclick = function() { onMissionClicked(this) };
         mission_branch.append(mission_node)
-
     }
 }
 
@@ -46,4 +49,14 @@ function createElement(type, className=undefined, idName=undefined){
         element.setAttribute("id", idName)
     }
     return element
+}
+
+function getMissionIcon(filename) {
+    var image = document.createElement("img");
+    image.setAttribute("src", `../static/assets/missions/${filename}`);
+    return image;
+}
+
+function onMissionClicked(mission_node){
+    console.log(mission_node);
 }
